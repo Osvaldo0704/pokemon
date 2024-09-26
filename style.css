@@ -1,0 +1,62 @@
+
+.pag_inicial{
+background-image: url(Pokedex_pag_inicial.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+min-height: 100vh;
+min-width: auto;
+font-family:'Courier New', Courier, monospace;}
+
+.bl{
+background-color: #6bbcff;
+}
+
+html{
+background-color: rgb(255, 255, 255);
+}
+.btn_inicial{
+background-color: red;
+border-radius: 10px;
+width: auto;
+height: 50px;
+padding: 0;
+}
+.centralizado {
+text-align: center; /* Centraliza os itens filhos (botões) dentro da div */
+display: flexbox;
+}
+.centro_button {
+display: inline-block; /* Garante que o botão se comporte como um bloco de linha */
+margin: 0 auto; /* Margens automáticas não são necessárias com display: inline-block, mas podem ser úteis */
+
+}
+.botoes_div{
+height: auto;
+margin-bottom: 35px;
+}
+.titulo{
+font-weight: bolder;
+}
+h4{
+font-size: 22px;
+}
+.bod{
+background-color: #6bbcff;
+min-width: 100vh;
+min-height: 100vh;
+}
+.input-container {
+margin: 20px;
+}
+input[type="text"] {
+width: 100%; /* Ajusta a largura da caixa de texto para ocupar o espaço disponível */
+padding: 10px; /* Adiciona um preenchimento interno */
+border: 1px solid #ccc; /* Define a borda da caixa de texto */
+border-radius: 4px; /* Adiciona bordas arredondadas */
+}
+li{
+font-weight: bolder;
+margin: 5px;
+}
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Pokémon</title>
+    <link rel="shortcut icon" href="https://i.postimg.cc/0y7qV6NC/pokemon-1635610-1920.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .pag_inicial{
+background-image: url(imagens/Pokedex_pag_inicial.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+min-height: 100vh;
+min-width: auto;
+font-family:'Courier New', Courier, monospace;
+}
+
+.bl{
+    background-color: #6bbcff;
+}
+
+html{
+    background-color: rgb(255, 255, 255);
+}
+.btn_inicial{
+    background-color: red;
+    border-radius: 10px;
+    width: auto;
+    height: 50px;
+    padding: 0;
+}
+.centralizado {
+    text-align: center; /* Centraliza os itens filhos (botões) dentro da div */
+    display: flexbox;
+}
+.centro_button {
+    display: inline-block; /* Garante que o botão se comporte como um bloco de linha */
+    margin: 0 auto; /* Margens automáticas não são necessárias com display: inline-block, mas podem ser úteis */
+    
+}
+.botoes_div{
+    height: auto;
+    margin-bottom: 35px;
+}
+.titulo{
+    font-weight: bolder;
+}
+h4{
+    font-size: 22px;
+}
+.bod{
+    background-color: #6bbcff;
+    min-width: 100vh;
+    min-height: 100vh;
+}
+.input-container {
+    margin: 20px;
+}
+input[type="text"] {
+    width: 100%; /* Ajusta a largura da caixa de texto para ocupar o espaço disponível */
+    padding: 10px; /* Adiciona um preenchimento interno */
+    border: 1px solid #ccc; /* Define a borda da caixa de texto */
+    border-radius: 4px; /* Adiciona bordas arredondadas */
+}
+li{
+    font-weight: bolder;
+    margin: 5px;
+}
+
+    </style>
+  </head>
+  <body class="bod">
+    <nav aria-label="breadcrumb">
+      
+        <ol class="breadcrumb" style="margin-bottom: 0;background-color: rgb(167, 0, 0);">
+        
+          <li class="breadcrumb-item active" aria-current="page" style="color: black;">Página Inicial</li>
+          <img src="imagens\pokemon-6046746_1280.png" style="margin-left: 45%;height: 25px; width: auto;">
+
+        </ol>
+      </nav>
+    <div class="col pag_inicial centralizado bl" style="margin: 0; padding: 0;">
+
+      <h1>
+        <img src="https://i.postimg.cc/50VhsrS0/141-1413418-pokemon-sun-and-moon-png-clipart-black-and-1.png" alt="logo " style="height: 350px;">
+      </h1>
+
+
+      <div class="botoes_div">
+      <button class="btn_inicial centro_button" style="padding-top:0 ; margin-top: 7%;" type="button">
+        <h4>Pokémons</h4>
+      </button>
+      </div>
+
+
+      
+      <div class="botoes_div ">
+        <button class="btn_inicial centro_button" data-toggle="modal" data-target="#modalExemplo" style="padding-top:0 ;" type="button">
+
+          <h4>Cadastrar Pokémon</h4>
+        </button>
+    
+        <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cadastrar Pokémon</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            
+              <div class="modal-body">
+                <div class="input-container">
+                  <label for="nome">Nome:</label>
+                  <input type="text" id="nome" name="nome" placeholder="Pixu...">
+                </div>
+              <div class="modal-body">
+                <div class="input-container">
+                  <label for="nome">Tipo 1:</label>
+                  <input type="text" id="nome" name="nome" placeholder="Água...">
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="input-container">
+                  <label for="nome">Tipo 2:</label>
+                  <input type="text" id="nome" name="nome" placeholder="Opcional">
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="input-container">
+                  <label for="nome">Tamanho:</label>
+                  <input type="text" id="nome" name="nome" placeholder="Cm">
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="input-container">
+                  <label for="nome">Rota:</label>
+                  <input type="text" id="nome" name="nome" placeholder="">
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="input-container">
+                  <label for="nome">Nº:</label>
+                  <input type="text" id="nome" name="nome" placeholder="Nº0">
+                </div>
+              </div>
+              <div class="modal-footer" style="display: grid; align-items: center; justify-content: center;">
+                <div id="liveAlertPlaceholder"></div>
+                <button id="liveAlertBtn"  type="button" class="btn btn-success" >
+                  Cadastrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="botoes_div">
+        <a href="Personagem.html">
+        <button class="btn_inicial centro_button" style="padding-top:0 ;" type="button">
+          
+          <h4> Personagem</h4>
+        </button>
+      </a>
+      </div>
+    
+    
+      
+
+      
+
+
+      
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script> 
+      $('#meuModal').on('shown.bs.modal', function () {
+      $('#meuInput').trigger('focus')
+      })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    const appendAlert = (message, type) => {
+      const wrapper = document.createElement('div')
+      wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `   <div>${message}</div>`,
+        '</div>'
+      ].join('')
+    
+      alertPlaceholder.append(wrapper)
+    }
+    
+    const alertTrigger = document.getElementById('liveAlertBtn')
+    if (alertTrigger) {
+      alertTrigger.addEventListener('click', () => {
+        appendAlert('Cadastrado!!', 'success')
+      })
+    }
+  </script>
+  </body>
+</html>
